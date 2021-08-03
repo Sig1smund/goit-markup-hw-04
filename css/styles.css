@@ -484,8 +484,41 @@ body button:active {
 
 .clients .clients-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.client {
+  margin-right: 30px;
+}
+
+.client-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+
+  fill: var(--secondary-text-color);
+}
+
+.client:last-child {
+  margin-right: 0px;
+}
+
+.client-logo:hover,
+.client-logo:focus {
+  fill: var(--action-color);
+  color: var(--action-color);
+  background-color: var(--background-color);
 }
 
 /*GALLERY*/
@@ -630,13 +663,21 @@ body button:active {
   padding-bottom: 60px;
 }
 
-.footer .container {
+.footer-container {
   display: flex;
-  justify-content: flex-start;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.footer .container {
+  display: block;
+  width: 270px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0px;
+  margin-right: 70px;
 }
 
 .footer-logo .studio-lighten {
@@ -691,4 +732,59 @@ body button:active {
   text-align: left;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.social-links {
+  width: auto;
+  padding-bottom: 30px;
+  margin-left: 0px;
+  margin-right: auto;
+  margin-top: 12px;
+  display: block;
+  justify-content: center;
+}
+
+.social-links .links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.links-list .link-social {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding-top: 10px;
+
+  fill: rgba(175, 177, 184, 1);
+}
+
+.link-social:last-child {
+  margin-right: 0px;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  fill: var(--background-color);
+  background-color: var(--action-color);
+}
+
+.social-links .title {
+  display: block;
+
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
 }
