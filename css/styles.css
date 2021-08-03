@@ -734,7 +734,7 @@ body button:active {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.social-links {
+.social-footer {
   width: auto;
   padding-bottom: 30px;
   margin-left: 0px;
@@ -744,34 +744,7 @@ body button:active {
   justify-content: center;
 }
 
-.social-links .links-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-}
-
-.links-list .link-social {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  border-radius: 50%;
-  padding-top: 10px;
-
-  fill: rgba(175, 177, 184, 1);
-}
-
-.link-social:last-child {
-  margin-right: 0px;
-}
-
-.social-links a:hover,
-.social-links a:focus {
-  fill: var(--background-color);
-  background-color: var(--action-color);
-}
-
-.social-links .title {
+.social-footer .title {
   display: block;
 
   font-family: Roboto;
@@ -787,4 +760,42 @@ body button:active {
   margin: 0px;
   padding: 0px;
   margin-bottom: 20px;
+}
+
+.social-footer .footerlinks-list {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.social-footercontainer {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.footerlink {
+  fill: var(--background-color);
+  padding: 0px;
+  margin: 0px;
+  width: 44px;
+  height: 44px;
+  padding-left: 11px;
+}
+
+.social-footercontainer:last-child {
+  margin-right: 0px;
+}
+
+.social-footercontainer:hover,
+.social-footercontainer:focus {
+  fill: var(--background-color);
+  background-color: var(--action-color);
+}
+
+.footericon-instagram {
+  align-items: center;
 }
