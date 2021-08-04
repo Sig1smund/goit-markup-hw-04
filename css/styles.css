@@ -24,7 +24,7 @@ body {
 body ul {
   list-style: none;
 }
-/*
+
 body button {
   font-size: 16px;
   font-style: normal;
@@ -37,7 +37,7 @@ body button {
   color: var(--primary-text-color);
   cursor: pointer;
 }
-*/
+
 body a {
   text-decoration: none;
 }
@@ -241,6 +241,8 @@ body button:active {
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  cursor: pointer;
 }
 
 /*ADVANTAGES*/
@@ -589,6 +591,8 @@ body button:active {
   border-style: hidden;
   border-color: #f5f4fa;
   background-color: rgba(245, 244, 250, 1);
+
+  cursor: pointer;
 }
 
 .filter-buttons button:active,
