@@ -24,7 +24,7 @@ body {
 body ul {
   list-style: none;
 }
-
+/*
 body button {
   font-size: 16px;
   font-style: normal;
@@ -37,7 +37,7 @@ body button {
   color: var(--primary-text-color);
   cursor: pointer;
 }
-
+*/
 body a {
   text-decoration: none;
 }
@@ -367,6 +367,8 @@ body button:active {
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
+
+  background-color: var(--background-color);
 }
 
 .team-list > .team-item:nth-child(4) {
@@ -432,17 +434,26 @@ body button:active {
   padding: 0px;
 }
 
-.links-list .link-social {
-  width: 40px;
-  height: 40px;
+.link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 10px;
+}
+
+.links-list .link-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  padding-top: 10px;
 
   fill: rgba(175, 177, 184, 1);
 }
 
-.link-social:last-child {
+.link-item:last-child {
   margin-right: 0px;
 }
 
@@ -507,7 +518,7 @@ body button:active {
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
 
-  fill: var(--secondary-text-color);
+  fill: rgba(175, 177, 184, 1);
 }
 
 .client:last-child {
@@ -517,7 +528,7 @@ body button:active {
 .client-logo:hover,
 .client-logo:focus {
   fill: var(--action-color);
-  color: var(--action-color);
+  border-color: var(--action-color);
   background-color: var(--background-color);
 }
 
@@ -573,14 +584,16 @@ body button:active {
 
   border-radius: 4px;
   border-width: 2px;
-  border-style: outset;
+  border-style: hidden;
   border-color: #f5f4fa;
+  background-color: rgba(245, 244, 250, 1);
 }
 
-.filter-buttons button:active {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+.filter-buttons button:active,
+.filter-buttons button:hover,
+.filter-buttons button:focus {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .filter-btn:last-child {
@@ -608,6 +621,8 @@ body button:active {
 .project {
   margin-right: 30px;
   margin-bottom: 30px;
+
+  border: 1px solid rgba(238, 238, 238, 1);
 }
 
 .project:nth-last-child(-n + 3) {
@@ -616,6 +631,13 @@ body button:active {
 
 .project:nth-child(3n + 3) {
   margin-right: 0px;
+}
+
+.project:hover,
+.project:focus {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .title-container {
@@ -649,10 +671,6 @@ body button:active {
 
 .gallery .filter {
   margin: 0px;
-}
-
-.projects-list .project {
-  border: 1px solid rgba(238, 238, 238, 1);
 }
 
 /*FOOTER*/
@@ -773,17 +791,21 @@ body button:active {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding-top: 10px;
   align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footerlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   fill: var(--background-color);
   padding: 0px;
   margin: 0px;
   width: 44px;
   height: 44px;
-  padding-left: 11px;
 }
 
 .social-footercontainer:last-child {
