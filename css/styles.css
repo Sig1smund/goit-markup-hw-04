@@ -823,7 +823,3 @@ body button:active {
   fill: var(--background-color);
   background-color: var(--action-color);
 }
-
-.footericon-instagram {
-  align-items: center;
-}
